@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="store">
+    <static>true</static>
+    <link name="middle1">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://grocery_store/middle1/middle1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://grocery_store/middle1/middle1.dae</uri>
+          </mesh>
+        </geometry>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+    </link>
+  </model>
+</sdf>
