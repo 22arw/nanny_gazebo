@@ -73,7 +73,7 @@
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
     </scene>
     <audio>
       <device>default</device>
@@ -87,7 +87,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
 
-    <model name='walls'>
+    <model name='grocery_store'>
       <pose frame=''>0.633 0.453 0 0 -0 0</pose>
       <link name='Wall_11'>
         <pose frame=''>-7.175 -0 0 0 -0 1.5708</pose>
@@ -362,108 +362,99 @@
         </collision>
       </link>
       <static>1</static>
+      <include>
+        <name>checkout1</name>
+        <uri>model://grocery_store/checkout1</uri>
+        <pose>0 -1.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>checkout2</name>
+        <uri>model://grocery_store/checkout2</uri>
+        <pose>0 0.791910 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>checkout3</name>
+        <uri>model://grocery_store/checkout3</uri>
+        <pose>0 -1.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>checkout4</name>
+        <uri>model://grocery_store/checkout4</uri>
+        <pose>0 -1.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf1</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 -2.1 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf2</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 -.6 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf3</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 0.9 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf4</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 2.4 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf5</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 3.9 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>shelf6</name>
+        <uri>model://grocery_store/shelf1</uri>
+        <pose>0 5.4 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>fridges</name>
+        <uri>model://grocery_store/fridges</uri>
+        <pose>0 -3.24117 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>fruits</name>
+        <uri>model://grocery_store/fruits</uri>
+        <pose>.517982 -1.746 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>meat_section</name>
+        <uri>model://grocery_store/meat_section</uri>
+        <pose>0 -1.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>middle1</name>
+        <uri>model://grocery_store/middle1</uri>
+        <pose>2.221313 -2.5 -1.14 0 0 1.56</pose>
+      </include>
+      <include>
+        <name>middle2</name>
+        <uri>model://grocery_store/middle2</uri>
+        <pose>0 -2.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>middle3</name>
+        <uri>model://grocery_store/middle3</uri>
+        <pose>0 -2.5 -1.14 0 0 0</pose>
+      </include>
+      <include>
+        <name>produce_section</name>
+        <uri>model://grocery_store/produce_section</uri>
+        <pose>0 -1.5 -1.14 0 0 0</pose>
+      </include>
     </model>
 
-    <include>
-      <name>checkout1</name>
-      <uri>model://grocery_store/checkout1</uri>
-      <pose>0 -1 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>checkout2</name>
-      <uri>model://grocery_store/checkout2</uri>
-      <pose>0 1.291910 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>checkout3</name>
-      <uri>model://grocery_store/checkout3</uri>
-      <pose>0 -1 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>checkout4</name>
-      <uri>model://grocery_store/checkout4</uri>
-      <pose>0 -1 -1.14 0 0 0</pose>
-    </include>
-
-    <include>
-      <name>shelf1</name>
-      <uri>model://grocery_store/shelf1</uri>
-      <pose>0 -1.2 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>shelf2</name>
-      <uri>model://grocery_store/shelf2</uri>
-      <pose>0 -1.2 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>shelf3</name>
-      <uri>model://grocery_store/shelf3</uri>
-      <pose>0 0.1 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>shelf4</name>
-      <uri>model://grocery_store/shelf4</uri>
-      <pose>0 -1.2 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>shelf5</name>
-      <uri>model://grocery_store/shelf5</uri>
-      <pose>0 -1.2 -1.14 0 0 0</pose>
-    </include>
-    <include>
-      <name>shelf6</name>
-      <uri>model://grocery_store/shelf6</uri>
-      <pose>0 -1.2 -1.14 0 0 0</pose>
-    </include>
-
-    <include>
-      <name>fridges</name>
-      <uri>model://grocery_store/fridges</uri>
-      <pose>0 -2.74117 -1.14 0 0 0</pose>
-    </include>
- 
-    <include>
-      <name>fruits</name>
-      <uri>model://grocery_store/fruits</uri>
-      <pose>.517982 -1.346 -1.14 0 0 0</pose>
-      <cast_shadows>false</cast_shadows>
-    </include>
-
-    <include>
-      <name>meat_section</name>
-      <uri>model://grocery_store/meat_section</uri>
-      <pose>0 -1 -1.14 0 0 0</pose>
-    </include>
-   
-    <include>
-      <name>middle1</name>
-      <uri>model://grocery_store/middle1</uri>
-      <pose>2.221313 -2.0 -1.14 0 0 1.56</pose>
-    </include>
-
-    <include>
-      <name>middle2</name>
-      <uri>model://grocery_store/middle2</uri>
-      <pose>0 -2 -1.14 0 0 0</pose>
-    </include>
-    
-    <include>
-      <name>middle3</name>
-      <uri>model://grocery_store/middle3</uri>
-      <pose>0 -2 -1.14 0 0 0</pose>
-    </include>
-
-    <include>
-      <name>produce_section</name>
-      <uri>model://grocery_store/produce_section</uri>
-      <pose>0 -1 -1.14 0 0 0</pose>
-    </include>
-        <state world_name='default'>
+    <state world_name='default'>
       <sim_time>123 148000000</sim_time>
       <real_time>123 799976274</real_time>
       <wall_time>1605579479 718550095</wall_time>
       <iterations>123148</iterations>
-      <model name='grocery_store'>
+      <model name='Grocery Store'>
         <pose frame=''>2.93177 -7.26422 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -482,6 +473,7 @@
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
+
       </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
@@ -490,7 +482,7 @@
 
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>12.699 0.0388 23.255 0 1.054 3.13</pose>
+        <pose frame=''>18.5922 0.03994 20.02929 0 .8419 -3.14</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
