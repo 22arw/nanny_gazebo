@@ -9,6 +9,19 @@
             <uri>model://grocery_store/produce_section/produce_section.dae</uri>
           </mesh>
         </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -18,6 +31,9 @@
         </geometry>
         <cast_shadows>false</cast_shadows>
       </visual>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
     </link>
   </model>
 </sdf>
